@@ -3,64 +3,70 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Mohab Ahmed, Sprints, LIC=----
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mohab Ahmed, SPRINTS, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain:       MDK-Lite  Version: 5.29.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 6 (build 750)
 Assembler:       Armasm.exe V5.06 update 6 (build 750)
 Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
 Library Manager: ArmAr.exe V5.06 update 6 (build 750)
 Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      lmidk-agdi.dll V???
-Dialog DLL:      TCM.DLL V1.56.4.0
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+    Target DLL: lmidk-agdi.dll
+Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
-E:\mohab\academy\sprints\projects\ARM\Ahmed Atef\WDT_debug\WDT\first_project.uvprojx
-Project File Date:  06/23/2023
+E:\mohab\academy\sprints\projects\ARM\RGB_V1.0\RGB_V.1\RGB_V1.0\RGB_V2.0.uvprojx
+Project File Date:  08/22/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
-compiling Push_button.c...
-GPIO.h(92): warning:  #1-D: last line of file ends without a newline
-  #endif //GPIO
-Push_button.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif //_Push_button_h
-Push_button.c(46): warning:  #188-D: enumerated type mixed with another type
-  	*PB_state = GET_BIT_STATUS(GPIODATA(PortNum),PinNum);
-Push_button.c: 3 warnings, 0 errors
+compiling SysTick_timer.c...
+MCAL\SysTick_timer.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif //__SysTick_timmer_h
+MCAL\SysTick_timer.c(36): warning:  #188-D: enumerated type mixed with another type
+  	*SysTick_state = GET_BIT_STATUS(STCTRL, COUNT);
+MCAL\SysTick_timer.c(49): warning:  #1-D: last line of file ends without a newline
+  }
+MCAL\SysTick_timer.c: 3 warnings, 0 errors
 compiling main.c...
-..\..\..\NEW_GPIO\GPIO.h(92): warning:  #1-D: last line of file ends without a newline
+.\MCAL\GPIO.h(92): warning:  #1-D: last line of file ends without a newline
   #endif //GPIO
-..\..\..\NEW_GPIO\LED.h(18): warning:  #1-D: last line of file ends without a newline
+..\RGB_V1.0\./HAL/LED.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
-..\WDT\GPIO.h(92): warning:  #1-D: last line of file ends without a newline
-  #endif //GPIO
-..\WDT\Push_button.h(11): warning:  #1-D: last line of file ends without a newline
+..\RGB_V1.0\./HAL/Push_button.h(11): warning:  #1-D: last line of file ends without a newline
   #endif //_Push_button_h
-..\..\..\NEW_GPIO\main.c(97): warning:  #1-D: last line of file ends without a newline
-  }
-..\..\..\NEW_GPIO\main.c: 5 warnings, 0 errors
+..\RGB_V1.0\./MCAL/SysTick_timer.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif //__SysTick_timmer_h
+APP\main.c: 4 warnings, 0 errors
 compiling LED.c...
-..\..\..\NEW_GPIO\GPIO.h(92): warning:  #1-D: last line of file ends without a newline
+.\MCAL\GPIO.h(92): warning:  #1-D: last line of file ends without a newline
   #endif //GPIO
-..\..\..\NEW_GPIO\LED.h(18): warning:  #1-D: last line of file ends without a newline
+HAL\LED.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\..\NEW_GPIO\LED.c(54): warning:  #1-D: last line of file ends without a newline
+HAL\LED.c(54): warning:  #1-D: last line of file ends without a newline
   }
-..\..\..\NEW_GPIO\LED.c: 3 warnings, 0 errors
+HAL\LED.c: 3 warnings, 0 errors
 assembling startup_TM4C123.s...
+compiling Push_button.c...
+HAL\../MCAL/GPIO.h(92): warning:  #1-D: last line of file ends without a newline
+  #endif //GPIO
+HAL\Push_button.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif //_Push_button_h
+HAL\Push_button.c(46): warning:  #188-D: enumerated type mixed with another type
+  	*PB_state = GET_BIT_STATUS(GPIODATA(PortNum),PinNum);
+HAL\Push_button.c: 3 warnings, 0 errors
 compiling system_TM4C123.c...
 linking...
-Program Size: Code=2408 RO-data=668 RW-data=0 ZI-data=608  
+Program Size: Code=2364 RO-data=668 RW-data=0 ZI-data=608  
 FromELF: creating hex file...
-".\Objects\first_p.axf" - 0 Error(s), 11 Warning(s).
+".\Objects\first_p.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -77,19 +83,19 @@ Package Vendor: Keil
    * Component: Startup Version: 1.0.1
 
 <h2>Collection of Component include folders:</h2>
-  ./RTE/_Target_1
-  C:/Users/mohab/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  C:/Users/mohab/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  .\RTE\_Target_1
+  C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device/Source/ARM/startup_TM4C123.s
-      Source file:   Device/Source/system_TM4C123.c
-      Include file:  Device/Include/TM4C123/TM4C123.h
-Build Time Elapsed:  00:00:02
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

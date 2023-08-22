@@ -1,5 +1,5 @@
-.\objects\push_button.o: Push_button.c
-.\objects\push_button.o: GPIO.h
+.\objects\push_button.o: HAL\Push_button.c
+.\objects\push_button.o: HAL\../MCAL/GPIO.h
 .\objects\push_button.o: C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h
 .\objects\push_button.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
 .\objects\push_button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -8,5 +8,5 @@
 .\objects\push_button.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\push_button.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\push_button.o: C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h
-.\objects\push_button.o: Push_button.h
-.\objects\push_button.o: common.h
+.\objects\push_button.o: HAL\Push_button.h
+.\objects\push_button.o: ..\RGB_V1.0\./SERVICE/common.h

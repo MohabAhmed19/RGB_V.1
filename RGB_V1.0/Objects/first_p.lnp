@@ -1,6 +1,7 @@
 --cpu=Cortex-M4.fp.sp
-".\objects\led.o"
 ".\objects\main.o"
+".\objects\systick_timer.o"
+".\objects\led.o"
 ".\objects\push_button.o"
 ".\objects\startup_tm4c123.o"
 ".\objects\system_tm4c123.o"

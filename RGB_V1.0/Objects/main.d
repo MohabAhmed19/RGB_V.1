@@ -1,4 +1,4 @@
-.\objects\main.o: ..\..\..\NEW_GPIO\main.c
+.\objects\main.o: APP\main.c
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
@@ -8,8 +8,8 @@
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\main.o: C:\Users\mohab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h
-.\objects\main.o: ..\..\..\NEW_GPIO\LED.h
-.\objects\main.o: ..\..\..\NEW_GPIO\GPIO.h
-.\objects\main.o: ..\..\..\NEW_GPIO\common.h
-.\objects\main.o: ..\WDT\Push_button.h
-.\objects\main.o: ..\WDT\GPIO.h
+.\objects\main.o: ..\RGB_V1.0\./HAL/LED.h
+.\objects\main.o: .\MCAL\GPIO.h
+.\objects\main.o: .\SERVICE\common.h
+.\objects\main.o: ..\RGB_V1.0\./HAL/Push_button.h
+.\objects\main.o: ..\RGB_V1.0\./MCAL/SysTick_timer.h

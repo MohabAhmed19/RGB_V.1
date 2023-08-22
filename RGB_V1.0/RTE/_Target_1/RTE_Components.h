@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'first_project' 
+ * Project: 'RGB_V2.0' 
  * Target:  'Target 1' 
  */
 
